@@ -1,8 +1,6 @@
 
 //Colores:
 
-
-
 const rojo={
   esFuerte(){
     return true
@@ -322,4 +320,3 @@ bolichito.cambiarMostrador(cajita)
 
 console.log(`¿Puede ofrecerle algo a juan? ${bolichito.puedeOfrecerleAlgoA(juan)}`)
 
-MODIFICADO1
