@@ -1,5 +1,4 @@
 
-/* prueba 2 - completa // prueba 3??*/ 
 //Colores:
 
 const rojo={
