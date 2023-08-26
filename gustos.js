@@ -88,7 +88,7 @@ const remera = {
 }
 
 const pelota={
-  color:pardo,
+  color: pardo,
   material: cuero,
   peso(){
       return 1300
@@ -118,25 +118,25 @@ const biblioteca={
 const muñeco={
   color: celeste,
   material: vidrio,
-  pesoInicial:100,
-  esBrillante(){
+  pesoActual: 100,
+  esBrillante() {
     return this.material.esBrillante()
   },
   esFuerte(){
     return this.color.esFuerte()    
   }, 
   cambiarPeso(unpeso){
-    this.pesoInicial=unpeso
+    this.pesoActual=unpeso
   },
-  peso(){
-      return this.pesoInicial
+  peso() {
+      return this.pesoActual
   },
 }
 
 const placa={
-  color: celeste,
+  color: rojo,
   material: cobre,
-  pesoInicial:100,
+  pesoActual: 2400,
   esBrillante(){
     return this.material.esBrillante()
   },
@@ -144,10 +144,10 @@ const placa={
     return this.material.esFuerte()    
   }, 
   cambiarPeso(unpeso){
-      this.pesoInicial=unpeso
+      this.pesoActual=unpeso
     },
   peso(){
-      return this.pesoInicial
+      return this.pesoActual
     },
   cambiarColor(uncolor){
     this.color=uncolor
@@ -210,7 +210,7 @@ const cajita={
 
 const rosa = {
   leGusta(objeto){
-    return (objeto.peso() > 2000)
+    return (objeto.peso() <= 2000)
   }
 }
   
@@ -229,7 +229,8 @@ const luisa={
 
 const juan={
   leGusta(objeto){
-    return ((objeto.peso()>1200 && objeto.peso()<1800) || !objeto.esFuerte())
+    return ((objeto.peso()>=1200 && objeto.peso()<=1800) || !objeto.esFuerte())
+    // (1200 <= objeto.peso() <= 1800)
   }
 }
 
@@ -286,25 +287,25 @@ console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)
 
 console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)//true
 
-//console.log(`peso: ${cajita.peso()}`)//true
+//console.log(`peso: ${cajita.peso()}`)
 
-console.log(`¿A rosa le gusta la biblioteca?: ${rosa.leGusta(biblioteca)}`) //true
-console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`) //false
+console.log(`¿A rosa le gusta la biblioteca?: ${rosa.leGusta(biblioteca)}`) 
+console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`) 
 cajita.cambiarContenido(biblioteca)
-console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`) //true
+console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`) 
 
-console.log(`¿Ambos objetos del bolichito son brillantes?: ${bolichito.esBrillante()}`) //false
+console.log(`¿Ambos objetos del bolichito son brillantes?: ${bolichito.esBrillante()}`) //
 
-console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //false
+console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //
 
 bolichito.cambiarVidriera(placa)
 
-console.log(`¿El objeto en el mostrador pesa más que el de la vidriera.?: ${bolichito.estaDesequilibrado()}`) //true
+console.log(`¿El objeto en el mostrador pesa más que el de la vidriera.?: ${bolichito.estaDesequilibrado()}`) //
 
 
-console.log(`¿Alguno de los objetos del bolichito es de color celeste?: ${bolichito.tieneAlgoDeColor(celeste)}`) //true
+console.log(`¿Alguno de los objetos del bolichito es de color celeste?: ${bolichito.tieneAlgoDeColor(celeste)}`) //
 
-console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //true
+console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //
 
 bolichito.cambiarVidriera(remera)
 
