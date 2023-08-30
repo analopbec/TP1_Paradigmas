@@ -266,9 +266,9 @@ const bolichito ={
 
 
 
-console.log(`A estefania le gusta la remera?: ${estefania.leGusta(remera)}`) //true
+console.log(`A estefania le gusta la remera?: ${estefania.leGusta(remera)}`) 
 
-console.log(`A rosa le gusta la remera?: ${rosa.leGusta(remera)}`) //false
+console.log(`A rosa le gusta la remera?: ${rosa.leGusta(remera)}`)
 console.log(`A juan le gusta la pelota?: ${juan.leGusta(pelota)}`)
 //true
 console.log(`A juan le gusta la remera?: ${juan.leGusta(remera)}`)
@@ -279,12 +279,12 @@ console.log(`A rosa le gusta el muñeco?: ${rosa.leGusta(muñeco)}`)//true el mu
 
 muñeco.cambiarPeso(100)
 /
-console.log(`A rosa le gusta el muñeco?: ${rosa.leGusta(muñeco)}`) //falso
+console.log(`A rosa le gusta el muñeco?: ${rosa.leGusta(muñeco)}`) 
 
 console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)
 //falso, deberia pesar 580gr
 
-console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)//true
+console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)
 
 //console.log(`peso: ${cajita.peso()}`)
 
@@ -293,19 +293,18 @@ console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`)
 cajita.cambiarContenido(biblioteca)
 console.log(`¿A rosa le gusta la cajita?: ${rosa.leGusta(cajita)}`) 
 
-console.log(`¿Ambos objetos del bolichito son brillantes?: ${bolichito.esBrillante()}`) //
+console.log(`¿Ambos objetos del bolichito son brillantes?: ${bolichito.esBrillante()}`) 
 
-console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //
+console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) 
 
 bolichito.cambiarVidriera(placa)
 
-console.log(`¿El objeto en el mostrador pesa más que el de la vidriera.?: ${bolichito.estaDesequilibrado()}`) //
+console.log(`¿El objeto en el mostrador pesa más que el de la vidriera.?: ${bolichito.estaDesequilibrado()}`)
 
 
-console.log(`¿Alguno de los objetos del bolichito es de color celeste?: ${bolichito.tieneAlgoDeColor(celeste)}`) //
+console.log(`¿Alguno de los objetos del bolichito es de color celeste?: ${bolichito.tieneAlgoDeColor(celeste)}`) 
 
-console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) //
-
+console.log(`¿Los objetos del bolichito son del mismo color?: ${bolichito.esMonocromatico()}`) 
 bolichito.cambiarVidriera(remera)
 
 console.log(`¿Puede ofrecerle algo a estefania? ${bolichito.puedeOfrecerleAlgoA(estefania)}`)
