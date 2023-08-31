@@ -252,7 +252,7 @@ const bolichito ={
     return this.mostrador.peso() > this.vidriera.peso()
   },
   tieneAlgoDeColor(uncolor){
-    return (this.mostrador.color === uncolor)
+    return (this.mostrador.color === uncolor || this.vidriera.color === uncolor )
   },
   puedeMejorar(){
     //puede mejorar si estaDesequilibrado true o es monocromatico true
