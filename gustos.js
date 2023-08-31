@@ -140,7 +140,7 @@ const placa={
     return this.material.esBrillante()
   },
   esFuerte(){
-    return this.material.esFuerte()    
+    return this.color.esFuerte()    
   }, 
   cambiarPeso(unpeso){
       this.pesoActual=unpeso
